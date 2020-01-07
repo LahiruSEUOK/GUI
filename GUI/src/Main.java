@@ -1,26 +1,17 @@
 import javax.swing.*;
-
+import class gui;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
+        System.out.println("[1] - Login\n[2] - Register");
 
-        JFrame abc = new JFrame("AWT Counter");
-        abc.setSize(400,300);
-        JButton b1 = new JButton("Count");
-        JTextArea t1 = new JTextArea(" dfgdfgfgfg  ");
-        t1.setSize(50,50);
-        abc.getContentPane().add(b1);
-        abc.getContentPane().add(t1);
+       gui user = new gui();
+       user.view();
 
 
 
 
-
-
-        abc.setVisible(true);
-        b1.setVisible(true);
-        t1.setVisible(true);
 
     }
 }
